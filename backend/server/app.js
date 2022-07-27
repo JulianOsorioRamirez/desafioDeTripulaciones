@@ -1,18 +1,13 @@
+const express = require("express");
+const router = require("./routes/routes");
+require("./database/mongo")
 
-    const express = require('express');
-    const bodyParser = require('body-parser');
-    const app = express();
-    const PORT = process.env.PORT || 5000;
-    
-    app.use(express.json());
-    require("./database/mongo")
-    require("./database/sqlDataBase")
-    const router = require("./routes/routes")
-    app.use(express.static(__dirname + "/views/css"));
-    app.use(express.urlencoded({extended: true}));
-    
-    app.use("/", router);
+const app = express();
 
-    app.listen(PORT, ()=>{
-        console.log(`Se inicia el server en : http://localhost:${PORT}`);
-    })
+app.use(express.json());
+
+ 
+app.use("/", router);
+const port = 5000;
+app.listen(port, () => console.log(`Servidor escuchando por el puerto ${port}!`));
+
