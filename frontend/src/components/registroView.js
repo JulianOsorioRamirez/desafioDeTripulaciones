@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from "react";
-import ContRegis from "../components/contRegis";
-import Login from "../components/login";
-
+import ContRegis from "./contRegis";
+import Login from "./login";
+import Logo from "./logo";
 
 
 
@@ -17,6 +17,7 @@ function Principal() {
 
   return (
 <div>
+<Logo/>
 <ContRegis/>
 <Login/>
 </div>
@@ -27,6 +28,3 @@ function Principal() {
 }
 
 export default Principal;
-
-
-

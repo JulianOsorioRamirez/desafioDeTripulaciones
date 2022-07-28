@@ -1,6 +1,6 @@
 
 import { Routes, Route } from "react-router-dom";
-import Principal from "../pages/Principal";
+import Principal from "../components/Principal";
 
 
 function Main(props) {
