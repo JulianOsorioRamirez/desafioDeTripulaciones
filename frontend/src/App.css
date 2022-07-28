@@ -65,17 +65,37 @@
 }
 /* HAMBURGUESA */
 
+
+#burgerBox{
+  border: 1px solid black;
+  float: left;
+  height: 60px;
+  
+
+}
+
+#burgerText{
+  color: rgb(233, 232, 232);
+  font-size: 10px;
+
+  margin: 10px -13px 6px 0px;
+}
+
 #hamburguesa{
   font-family: 'WebSymbolsRegular';
   float: left;
   font-size: 35px;
-  margin: 15px 0px 0px 10px;
+  margin: -13px 9px 0px 10px;
   color: rgb(233, 232, 232);
 }
 
 #hamburguesa:hover{
   cursor: pointer;
 }
+
+
+
+
 
 .menu{
   border: 1px solid black;
