@@ -33,13 +33,9 @@ const user = {
     const number = req.body.number
     const cp = req.body.postalCode
     const passConf = req.body.passConf
+    
 
-    console.log(name)
-    console.log(unName)
-    console.log(dni)
-    console.log(pass)
-    console.log(number)
-    console.log(cp)
+    
     
     if (
       
@@ -52,15 +48,16 @@ const user = {
       !postalCode.test(cp)
     ) {
       
-      // res.send(false)
-      console.log("datos incorrectos")
+      //res.send
+    
     }else {
      bcrypt.hash(pass, 10, (err, palabraSecretaEncriptada) => {
         if (err) {
-          console.log("Error hasheando:", err);
+         
         } else {
-          console.log("Y hasheada es: " + palabraSecretaEncriptada);
+      
           palabraEncriptada = palabraSecretaEncriptada;
+         
           
         }
         let userJson2 = {
@@ -84,7 +81,7 @@ const user = {
       const telf = req.body.telf
       const pass = req.body.pass
       var login = await Usuarios.findOne({ number: telf})
-      console.log(login.pass)
+
     
       if(login.length==0){
         res.json({logeado:false})
@@ -92,6 +89,7 @@ const user = {
         bcrypt.compare(pass, login.pass).then(function (result) {
         if(result===true){
            res.json({logeado: true})
+           
       }else{
         res.json({logeado:false})
       }

@@ -16,8 +16,7 @@ function ContRegis() {
   const [state, setState] = useState("");
 
   const sendData = () => {
-    console.log(sendName)
-    console.log(sendPass)
+   
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -36,7 +35,7 @@ function ContRegis() {
       .then((response) => response.json())
       .then((res) => console.log(setState(res)));
     if (state === true) {
-      console.log(state);
+     
       let test = document.getElementById("contenedorRegis");
       if (test.style.display == "block") {
         test.style.display = "none";
