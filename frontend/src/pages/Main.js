@@ -1,6 +1,8 @@
 
 import { Routes, Route } from "react-router-dom";
 import Principal from "../components/Principal";
+import RegistView from "../components/regisView";
+import Checkview from "../components/checkView";
 
 
 function Main(props) {
@@ -9,6 +11,11 @@ function Main(props) {
       <Routes>
       <Route path="/" element={<Principal />} />
       <Route path="/login" element={<Principal />} />
+      <Route path="/Regist" element={<RegistView />} />
+      <Route path="checkView" element={<Checkview />} />
+
+
+
 
       </Routes>
     </div>

@@ -1,11 +1,8 @@
 
 import React, { useState, useEffect } from "react";
-import Categoria from "./categoria";
-import Inicio from "./inicio";
-import Login from "./login";
-import Logo from "./logo";
-import { Navbar } from "./Navbar";
-
+import ContRegis from "../components/contRegis";
+import Login from "../components/login";
+import Logo from "../components/logo";
 
 
 
@@ -20,12 +17,9 @@ function Principal() {
 
   return (
 <div>
-
-
 <Logo/>
+<ContRegis/>
 <Login/>
-
-
 </div>
 
 

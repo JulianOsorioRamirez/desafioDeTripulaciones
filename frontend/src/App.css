@@ -214,12 +214,13 @@ padding: 8px;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.logo{
+.logo {
 
   margin: 0px auto;
   margin-top: 5rem;
@@ -229,11 +230,211 @@ padding: 8px;
   background-color: #63759b;
   border: 1px solid black;
   border-radius: 55px;
-background: linear-gradient(145deg, #f0f0f0, #cacaca);
-box-shadow:  23px 23px 46px #8f8f8f,
-             -23px -23px 46px #ffffff;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
 }
-.loginInputs{
+
+.logo1 {
+  margin: 0px auto;
+  margin-top: 8px;
+  width: 100px;
+  height: 100px;
+  background-color: #63759b;
+  border: 1px solid black;
+  border-radius: 10%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+}
+
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+
+}
+
+.phoneBox {
+  margin: 8px;
+}
+
+.passBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  width: 100%;
+}
+
+.registBox {
+  margin: 8px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.registBox * {
+
+  margin: 12px;
+
+}
+
+.remember {
+  margin: 8px;
+
+}
+
+.passRemember {
+  margin: 16px;
+  padding-right: 48px;
+  align-self: flex-end;
+}
+
+.button {
+  margin-top: 8px;
+}
+
+/* oooooooooooooooooooooooooooooooooooooooooooooo   tipousuario   oooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+.tipousuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.titulo {
+  width: 60%;
+}
+
+.imagen {
+  width: 120px;
+  height: 120px;
+  background-color: #63759b;
+  border: 1px solid black;
+  border-radius: 100%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+}
+
+.contenedortipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tipo {
+  width: 60%;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoncontinuar {
+  margin-bottom: 24px;
+}
+
+
+
+/* oooooooooooooooooooooooooooooooooooooooooooooo  fin tipousuario   oooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* oooooooooooooooooooooooooooooooooooooooooooooooo   inicio   oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.imagendonar {
+  width: 80%;
+  height: 120px;
+  background-color: #63759b;
+  border: 1px solid black;
+
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+.donar{
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+.donar *{
+  margin: 0%;
+}
+.donar input{
+  margin: 4px;
+
+}
+.categorias{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  margin-top: 24px;
+
+}
+.categoria{
+  margin-left: 24px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+align-items: center;
+  padding: 8px;
+}
+.imagen1{
+  width: 80px;
+  height: 80px;
+  background-color: #63759b;
+  border: 1px solid black;
+  border-radius: 100%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+}
+.letras{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 8px;
+  width: 70%;
+}
+.titulo{
+  margin: 0%;
+  padding: 2px;
+}
+.parrafos{
+  margin: 0px;
+  margin-left: 4%;
+
+}
+/* 000000000000000000000000000000000000000000000000   fin inicio   ooooooooooooooooooooooooooooooooooooooooo */
+/* 000000000000000000000000000000000000000000000000   cada categoria   ooooooooooooooooooooooooooooooooooooo */
+.nombrecategoria{
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+/* 000000000000000000000000000000000000000000000000000  julian    000000000000000000000000000000000000000000 */.loginInputs{
   display: flex;
   flex-direction: column;
 align-items: center;
@@ -249,7 +450,7 @@ justify-content: center;
   flex-direction: column;
 align-items: center;
 justify-content: center;
-  margin: 8px;
+  margin: 0px;
   width: 100%;
 }
 .registBox{
@@ -267,3 +468,117 @@ justify-content: center;
   padding-right: 48px;
   align-self: flex-end;
 }
+.buttonReg{
+  margin-top: 1rem;
+}
+.regisText{
+  margin: 0;
+  margin-right: 5.8rem;
+  font-size: 15px;
+}
+.regisTextR{
+  margin: 0;
+  margin-right: 2rem;
+  font-size: 15px;
+}
+.regisTextM{
+  margin: 0;
+  margin-right: 8rem;
+  font-size: 15px;
+}
+.regisTextC{
+  margin: 0;
+  margin-right: 5rem;
+  font-size: 15px;
+}
+.inputBox{
+  margin: 2rem;
+}
+.checkViewH1{
+  margin-top: 5px;
+  font-size: 27.5px;
+}
+.FormText1{
+  font-size: 20px;
+  font-weight: bold;
+}
+.FormText2{
+  margin-right: 3rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.checkContainer1{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rem;
+}
+.check1{
+  width: 30px;
+  height: 30px;
+  
+}
+.labelCheck1{
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+span{
+  font-size: 27px;
+}
+.span2{
+  font-size: 20px;
+}
+.span3{
+  font-size: 15px;
+}
+.check2{
+  width: 15px;
+  height: 15px;
+  
+}
+.checkContainer2{
+  display: flex;
+  flex-direction: column;
+}
+.labelCheck2{
+  margin-right: 15rem;
+  margin-bottom: 15px;
+}
+.labelCheck3{
+  margin-right: 11.9rem;
+  margin-bottom: 15px;
+}.labelCheck4{
+  margin-right: 11.3rem;
+  margin-bottom: 15px;
+}.labelCheck5{
+  margin-right: 13.1rem;
+  margin-bottom: 15px;
+}.labelCheck6{
+  margin-right: 7.9rem;
+  margin-bottom: 15px;
+}.labelCheck7{
+  margin-right: 9.3rem;
+  margin-bottom: 15px;
+}
+.labelCheck8{
+  margin-right: 11.6rem;
+  margin-bottom: 15px;
+}.labelCheck9{
+  margin-right: 9.8rem;
+  margin-bottom: 15px;
+}
+.checkContainer3{
+  display: flex;
+  flex-direction: column;
+}
+.buttonCont{
+   width: 150px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #63759b;
+    margin-top: 20px;
+}
+/* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
