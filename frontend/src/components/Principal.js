@@ -4,6 +4,7 @@ import Categoria from "./categoria";
 import Inicio from "./inicio";
 import Login from "./login";
 import Logo from "./logo";
+import { Navbar } from "./Navbar";
 
 
 
@@ -19,9 +20,12 @@ function Principal() {
 
   return (
 <div>
-{/* <Logo/>
-<Login/>  */}
-<Categoria/>
+
+
+<Logo/>
+<Login/>
+
+
 </div>
 
 
