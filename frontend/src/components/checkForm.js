@@ -18,24 +18,24 @@ return (
 <div>
 <div className="checkFormBox">
     <div className="checkFormContainer">
-       <h1 className="checkViewH1">Quieres ser voluntario</h1>
-       <div className="checkText1">
+      <div className="formContainer">
        <p className="FormText1"> Te llamas {name} y vives en {location}, ¿es correcto?</p>
+       <div>
+
        </div>
-       <div className="checkContainer1"> 
        <label className="labelCheck1">
         <input type="radio" className="check1" id="check1" />
-        <span>Sí</span>
+        <span class="Text-here">Sí</span>
       </label>
       <label>
         <input type="radio" className="check1" />
-        <span>No</span>
+        <span class="Text-here">No</span>
       </label>
-       </div>
-       <div className="checkText1">
-       <p className="FormText1">¿En que crees que puedes ayudar?</p>
-       </div>
-       <div className="checkContainer2"> 
+       
+      </div>
+      <div className=".QU-OFRECES">
+        <p className="FormText2">¿En que crees que puedes ayudar?</p>
+      <div className="CATEGORAS">
        <label className="labelCheck2">
         <input type="checkbox" className="check2" id="check1" />
         <span className="span3">Salud</span>
@@ -60,9 +60,10 @@ return (
         <input type="checkbox" className="check2" />
         <span className="span3">Nuevas tecnologías</span>
       </label>
-       </div>
+      </div>
+      </div>
        <div className="checkContainer3">
-       <p className="FormText2">¿Hasta donde puedes ayudar?</p>
+       <p className="FormText3">¿Hasta donde puedes ayudar?</p>
        <label className="labelCheck8">
         <input type="checkbox" className="check2" id="check1" />
         <span className="span3">Rango de km</span>
@@ -72,7 +73,7 @@ return (
         <span className="span3">Solo mi municipio</span>
       </label>
        </div>
-      <input type="button" id="buttonCont" className="buttonCont" value="Continuar"/>
+      <input type="button" className="btncheck" value="Entrar"/>
     </div>
     
 

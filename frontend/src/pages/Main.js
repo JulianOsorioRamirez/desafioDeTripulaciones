@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Principal from "../components/Principal";
 import RegistView from "../components/regisView";
 import Checkview from "../components/checkView";
+import OptionsUsers from "../components/optionsView";
 
 
 function Main(props) {
@@ -12,11 +13,8 @@ function Main(props) {
       <Route path="/" element={<Principal />} />
       <Route path="/login" element={<Principal />} />
       <Route path="/Regist" element={<RegistView />} />
-      <Route path="checkView" element={<Checkview />} />
-
-
-
-
+      <Route path="/Options" element={<OptionsUsers />} />
+      <Route path="/checkView" element={<Checkview />} />
       </Routes>
     </div>
   );

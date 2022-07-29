@@ -1,15 +1,13 @@
 
 import React, { useState, useEffect } from "react";
-import Logo from "./logo1";
-import CheckForm from "./checkForm";
-
-
+import Logo from "./logo";
+import ContRegis from "./contRegis";
 
 
 
 
 //Componente funcional -> 
-function Checkview() {
+function RegistView() {
 
 
 
@@ -19,7 +17,7 @@ function Checkview() {
   return (
 <div>
 <Logo/>
-<CheckForm/>
+<ContRegis/>
 </div>
 
 
@@ -27,4 +25,4 @@ function Checkview() {
 
 }
 
-export default Checkview;
+export default RegistView;
