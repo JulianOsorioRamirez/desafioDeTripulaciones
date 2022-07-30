@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import Navbar from '../components/Navbar';
 
 
 function Login(props) {
@@ -27,7 +27,9 @@ function Login(props) {
 
 
   return (
-    <div className="loginInputs">
+    <div>
+      <Navbar/>
+    <div className="loginInputs">  
       <div className="phoneBox">
         <p className="telText">Móvil</p>
         <input
@@ -63,6 +65,8 @@ function Login(props) {
         <label id="newMemberTxt">¿Eres Nuevo?</label>
         <input type="button" id="buttonLogin" value="Crear Cuenta" />
       </div>
+    </div>
+
     </div>
   )
 }
