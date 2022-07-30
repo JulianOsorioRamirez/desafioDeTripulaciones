@@ -13,15 +13,17 @@ import Ambos from "../assets/images/Ambos.png"
 function Options() {
 
 
+  const[typeUser, setTypeUser] = useState("")
 
-
-
+ if(typeUser === "ambos"){
+  window.location.assign("/checkView")
+ }
 
   return (
    <div>
      
       <div className="opstionsTextC">
-      <p class="optionsText">
+      <p className="optionsText">
       ¿Qué papel quieres tener en la red?
       </p>
       </div>
@@ -30,10 +32,10 @@ function Options() {
       </div>
       <div class="Card-tipos-miembro">
       <div>
-      <p class="members">
+      <p className="members">
           Miembros
          </p>
-      <p class="textCardOptions">
+      <p className="textCardOptions">
          Elige esta opción si buscas a alguien que te acompañe para solucionar tus problemas.
       </p>
       </div>
@@ -44,12 +46,12 @@ function Options() {
             <img className="memberImg2" src={voluntary} alt="" />
      
       </div>
-    <div class="Card-tipos-miembro2">
+    <div className="Card-tipos-miembro2">
       <div>
-      <p class="members">
+      <p className="members">
            Voluntarios
          </p>
-      <p class="textCardOptions">
+      <p className="textCardOptions">
          Elige esta opción si buscas aportar tu granito de arena a la comunidad de mayores
       </p>
       </div>
@@ -59,12 +61,12 @@ function Options() {
             <img className="memberImg3" src={Ambos} alt="" />
      
       </div>
-    <div class="Card-tipos-miembro3">
+    <div   onClick={() => setTypeUser("ambos")}className="Card-tipos-miembro3">
       <div>
-      <p class="members">
+      <p className="members">
           Ambos
          </p>
-      <p class="textCardOptions">
+      <p className="textCardOptions">
          Elige esta opción si buscas las dos anteriores opciones
       </p>
       </div>

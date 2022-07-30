@@ -25,11 +25,11 @@ return (
        </div>
        <label className="labelCheck1">
         <input type="radio" className="check1" id="check1" />
-        <span class="Text-here">Sí</span>
+        <span className="Text-here">Sí</span>
       </label>
       <label>
         <input type="radio" className="check1" />
-        <span class="Text-here">No</span>
+        <span className="Text-here">No</span>
       </label>
        
       </div>

@@ -781,6 +781,20 @@ label {
   text-align: center;
   color: #1f3262;
 }
+.-de-3{
+  width: 59px;
+  height: 36px;
+  
+  
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3262;
+}
 button {
   width: 208px;
   height: 48px;
@@ -953,5 +967,42 @@ margin-top: 3rem;
 }
 .imgMember{
       margin-bottom: 5rem;
+}
+.arrowImg{
+  margin-top: 5.8rem;
+  width: 1.7rem;
+}
+.msjTrue{
+  position: absolute;
+  width: 327px;
+  height: 280px;
+  background-image: linear-gradient(95deg, #1F3262 0%, #4A4D9B 40%, #11e7f6 100%);
+  margin-left: 2.7rem;
+  animation: fromRight 300ms linear;
+  border-radius: 15px;
+  border: none;
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+.xDiv{
+  margin-top: 2rem;
+}
+.msjText{
+   color: #FAFAFA;
+   font-size: 35px;
+}
+.textP{
+  margin: 0;
+}
+.textMsj{
+  color: #FAFAFA;
+  font-size: 18px;
 }
 /* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
