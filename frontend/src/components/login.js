@@ -28,41 +28,47 @@ function Login(props) {
 
   return (
     <div className="loginInputs">
-      <div className="phoneBox">
-        <p className="telText">Móvil</p>
-        <input
-          className="telf"
-          id="telfLog"
-          type="text"
-          onChange={(e) => setDataToPhone(e.target.value)}
-
-        />
+      <div className="inputsLog">
+      <div className="COMPLETE">
+            <label>Movil</label>
+            <input
+              className="Rectangle-1"
+              id="telfLog"
+              type="text"
+              placeholder="Introduce tu numero"
+              onChange={(e) => setDataToPhone(e.target.value)}
+            />
+          </div>
+      <div className="COMPLETE">
+            <label>Contraseña</label>
+            <input
+              className="Rectangle-1"
+              id="telfLog"
+              type="text"
+              placeholder="Pon tu contraseña"
+              onChange={(e) => sendDataPass(e.target.value)}
+            />
+          </div>
       </div>
-      <div className="passBox">
-        <p className="passText">Contraseña</p>
-        <input
-          className="contLog"
-          id="passLog"
-          type="password"
-          onChange={(e) => sendDataPass(e.target.value)}
+      
 
-        />
-
-        <div className="remember">
-          <input type="checkbox" name="remember" id="rememberClick" />
-          <label for="remember" id="rememberText">Recuerda mi contraseña</label>
-       </div>
-       <div className="passRemember">
+      <label className="labelCheckRemember">
+        <input type="checkbox" className="check2" id="check1" />
+        <span className="spanRemember">Recordar mi contraseña</span>
+      </label>
+      <div className="button">
+      <button id = "buttonLogin" onClick={sendLogin}>Entrar</button>
+          
+        </div>
+        <div className="passRemember">
        <label for="remember" id="rememberText">¿Has olvidado tu contraseña?</label>
        </div>
-        <div className="button">
-          <input type="button" id="buttonLogin" value="Entrar" onClick={() => sendLogin()} />
-        </div>
-      </div>
-      <div className="registBox">
+       <div class="Line-1"></div>
+     
         <label id="newMemberTxt">¿Eres Nuevo?</label>
-        <input type="button" id="buttonLogin" value="Crear Cuenta" />
-      </div>
+      <button id = "buttonLogin2" onClick={sendLogin}>Regístrate</button>
+        
+      
     </div>
   )
 }
