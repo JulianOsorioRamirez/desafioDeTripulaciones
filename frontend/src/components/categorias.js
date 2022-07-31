@@ -10,6 +10,7 @@ function Categorias() {
 
 
     return (
+        
         <div className="categorias">
             <div className="categoria">
 

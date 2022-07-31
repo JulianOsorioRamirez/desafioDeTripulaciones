@@ -19,6 +19,7 @@ function Principal() {
 <div>
 <Logo/>
 <ContRegis/>
+
 <Login/>
 </div>
 

@@ -27,6 +27,20 @@ function Login(props) {
 
 
   return (
+
+    <div>
+
+    <div className="loginInputs">  
+      <div className="phoneBox">
+        <p className="telText">Móvil</p>
+        <input
+          className="telf"
+          id="telfLog"
+          type="text"
+          onChange={(e) => setDataToPhone(e.target.value)}
+
+        />
+
     <div className="loginInputs">
       <div className="inputsLog">
       <div className="COMPLETE">
@@ -49,6 +63,7 @@ function Login(props) {
               onChange={(e) => sendDataPass(e.target.value)}
             />
           </div>
+
       </div>
       
 
@@ -69,6 +84,8 @@ function Login(props) {
       <button id = "buttonLogin2" onClick={sendLogin}>Regístrate</button>
         
       
+    </div>
+
     </div>
   )
 }

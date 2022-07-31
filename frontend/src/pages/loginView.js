@@ -20,6 +20,7 @@ function Principal() {
 <Logo/>
 <ContRegis/>
 <Login/>
+
 </div>
 
 
