@@ -10,6 +10,7 @@ function CheckForm() {
 
 let name = "Juan"
 let location = "Madrid"
+const [isShown, setIsShown] = useState(true);
 
 
 
@@ -75,7 +76,17 @@ return (
        </div>
       <input type="button" className="btncheck" value="Entrar"/>
     </div>
-    
+    <div className="msjTrue"style={{display: isShown ? 'none' : 'block'}}>
+        <div className="xDiv">
+        
+        </div>
+        <div className="msjText">
+           <p className="textP">!ENHORABUENA!</p>
+        </div>
+        <p className="textMsj">
+         Ya te has dado de alta y tienes una cuenta en RED EmancipaTIC
+      </p>
+      </div>
 
 </div>
 </div>
