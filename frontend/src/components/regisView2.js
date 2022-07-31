@@ -1,14 +1,13 @@
 
 import React, { useState, useEffect } from "react";
-import ContRegis from "./contRegis";
-import Login from "./login";
 import Logo from "./logo";
+import ContRegis from "./contRegis";
 
 
 
 
 //Componente funcional -> 
-function Principal() {
+function RegistView() {
 
 
 
@@ -19,7 +18,6 @@ function Principal() {
 <div>
 <Logo/>
 <ContRegis/>
-<Login/>
 </div>
 
 
@@ -27,4 +25,4 @@ function Principal() {
 
 }
 
-export default Principal;
+export default RegistView;

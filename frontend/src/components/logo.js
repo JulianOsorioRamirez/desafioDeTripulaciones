@@ -1,6 +1,5 @@
 
-//import logo from "../../public/logo512.png"
-
+import logo from "../assets/images/ENCABEZAMIENTO.png"
 
 
 function Logo() {
@@ -11,9 +10,9 @@ function Logo() {
 
     return (
         <div className="logo">
-            {/* <section>
+            <section>
                 <img className="logoHome" src={logo} alt="" />
-            </section>  */}
+            </section> 
         </div>
 
     )

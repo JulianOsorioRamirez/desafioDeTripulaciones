@@ -312,17 +312,12 @@ body {
 
 .logo {
 
-  margin: 0px auto;
-  margin-top: 5rem;
-  width: 150px;
-  min-width: 50px;
-  height: 150px;
-  background-color: #63759b;
-  border: 1px solid black;
-  border-radius: 55px;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 23px 23px 46px #8f8f8f,
-    -23px -23px 46px #ffffff;
+  margin: 0px;
+  width: 100%;
+  
+}
+.logoHome{
+  width: 100%;
 }
 
 .logo1 {
@@ -343,7 +338,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 7rem;
+  margin-top: 1rem;
 
 }
 
@@ -535,6 +530,7 @@ body {
   margin: 16px;
 }
 
+
 /* 000000000000000000000000000000000000000000000000000  julian    000000000000000000000000000000000000000000 */
 .loginInputs {
   display: flex;
@@ -546,6 +542,10 @@ body {
 }
 
 .phoneBox {
+
+/* 000000000000000000000000000000000000000000000000000  julian    000000000000000000000000000000000000000000 */
+.phoneBox{
+
   margin: 8px;
 }
 
@@ -566,8 +566,24 @@ body {
 
 }
 
+
 .remember {
   margin: 8px;
+
+
+.rememberText{
+  width: 171px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: AtkinsonHyperlegible !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
 
 }
 
@@ -613,15 +629,113 @@ body {
   font-size: 27.5px;
 }
 
+
 .FormText1 {
   font-size: 20px;
-  font-weight: bold;
+
+.formContainer{
+  width: 291px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  margin: 30px 36px 82px 48px;
+  padding: 0;
 }
+.Text-here {
+  width: 73px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: AtkinsonHyperlegible !important;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+.QU-OFRECES {
+  width: 291px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin: 82px 36px 92px 48px;
+  padding: 0;
+}
+.FormText1{
+  width: 291px;
+  height: 72px;
+  flex-grow: 0;
+ 
+  font-size: 24px;
+
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+
+.CATEGORAS {
+  width: 291px;
+  height: 242px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  padding: 0 32px;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+}
+
 
 .FormText2 {
   margin-right: 3rem;
   font-size: 20px;
+
+.FormText2{
+  width: 291px;
+  height: 72px;
+  flex-grow: 0;
+ 
+  font-size: 24px;
+
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+  margin-left: 3rem;
+}
+.FormText3{
+  width: 291px;
+  height: 72px;
+  flex-grow: 0;
+ 
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+
+  margin-left: 3rem;
+  margin-top: 5rem;
 }
 
 .checkContainer1 {
@@ -657,6 +771,13 @@ span {
   width: 15px;
   height: 15px;
 
+
+
+  border-radius: 4px;
+  border: solid 2px #1f3262;
+  background-color: #fafafa;
+  
+
 }
 
 .checkContainer2 {
@@ -669,7 +790,14 @@ span {
   margin-bottom: 15px;
 }
 
+
 .labelCheck3 {
+
+.spanRemember{
+  font-size: 20px;
+}
+.labelCheck3{
+
   margin-right: 11.9rem;
   margin-bottom: 15px;
 }
@@ -693,6 +821,7 @@ span {
   margin-right: 9.3rem;
   margin-bottom: 15px;
 }
+
 
 .labelCheck8 {
   margin-right: 11.6rem;
@@ -803,3 +932,403 @@ span {
   float: center;
   
 }
+=======
+.labelCheck8{
+  margin-left: 3.5rem;
+  margin-bottom: 15px;
+}.labelCheck9{
+  margin-left: 3.5rem;
+  margin-bottom: 15px;
+}
+.labelCheckRemember{
+  margin-right: 1.2rem;
+  font-family: AtkinsonHyperlegible !important;
+}
+.checkContainer3{
+  display: flex;
+  flex-direction: column;
+}
+.buttonCont{
+   width: 150px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #63759b;
+    margin-top: 20px;
+}
+.btncheck{
+  width: 149px !important;
+  height: 48px  !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #49bcc4;
+  font-size: 26px;
+  width: 245px;
+  height: 59px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 8.5rem;
+  border: none;
+}
+.btncheck:active{
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.inputText{
+  margin: 7px;
+  margin-right: 110px;
+  color: #1F3262;
+}
+.inputTextM{
+  margin: 7px;
+  margin-right: 135px;
+  color: #1F3262;
+  
+}
+.inputName{
+  width: 104px;
+  height: 0px;
+  flex-grow: 0;
+  margin: 8px 0 0;
+  padding: 14.9px 45.7px 14.9px 19.6px;
+  border-radius: 8px;
+  background-color: #cdcdcd;
+}
+.ACCESO---REGISTRO-1-DE-2 {
+  width: 375px;
+  height: 812px;
+  flex-grow: 0;
+  padding: 0 0 52px;
+  background-color: #fff;
+}
+.BASE {
+  width: 375px;
+  height: 250px;
+  margin: 0 0 11px;
+  padding: 0 0 15px;
+  background-color: #fff;
+}
+label {
+  width: 280px;
+  height: 36px;
+  flex-grow: 0;
+  /* font-family: BalooPaaji2; */
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+.Rectangle-1 {
+  width: 251px;
+  height: 70px;
+  flex-grow: 0;
+  margin: 8px 0 0;
+  padding: 14.9px 45.7px 14.9px 19.6px;
+  border-radius: 8px;
+  background-color: #cdcdcd;
+  text-align: left;
+  border: none;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+
+.COMPLETE {
+  width: 280px;
+  height: 100px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0;
+  margin-left: 45px;
+  margin-bottom: 2.5rem;
+ 
+}
+.-de-2 {
+  width: 59px;
+  height: 36px;
+  margin: 29px 158px 0;
+  
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3262;
+}
+.-de-3{
+  width: 59px;
+  height: 36px;
+  
+  
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3262;
+}
+button {
+  width: 208px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #49bcc4;
+  font-size: 26px;
+  width: 245px;
+  height: 59px;
+  margin-left: 5rem;
+}
+#buttonLogin{
+  margin-right: 5rem;
+  width: 250px;
+  margin-top: 3.5rem;
+}
+#buttonLogin2{
+  width: 250px;
+  margin-right: 5.5rem;
+  margin-top: 2rem;
+}
+#newMemberTxt{
+  margin-left: 7.5rem;
+}
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.Text-Input {
+  width: 214.7px;
+  height: 26.3px;
+  flex-grow: 0;
+   font-family: AtkinsonHyperlegible; 
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+img.arrow-right-circle-SOLID {
+  width: 32px;
+  height: 32px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+.optionsText{
+  width: 277px;
+  height: 96px;
+  margin: 36px 49px 34px;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3262;
+}
+.opstionsTextC{
+  width: 375px;
+  height: 100px;
+  flex-grow: 0;
+  padding: 0 0 64px;
+  background-color: #fff;
+  margin-left: 1rem;
+}
+.Card-tipos-miembro{
+  width: 328px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3rem;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 8px;
+  background-color: #4a4d9b;
+}
+.Card-tipos-miembro2{
+  width: 328px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3rem;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 8px;
+  background-color: #4a4d9b;
+  margin-top: 8rem;
+}
+.Card-tipos-miembro3{
+  width: 328px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3rem;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 8px;
+  background-color: #4a4d9b;
+  margin-top: 8rem;
+}
+.members{
+  width: 108px;
+  height: 36px;
+  flex-grow: 0;
+  margin-left: 4.6rem;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fafafa;
+}
+.textCardOptions{
+  width: 265.7px;
+  height: 91.1px;
+  flex-grow: 0;
+  transform: rotate(-0.11deg);
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fafafa;
+}
+.memberImg{
+  border-radius: 50%;
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 114px;
+margin-left: 3.5rem;
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+}
+.memberImg2{
+  border-radius: 50%;
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 114px;
+margin-left: 3.5rem;
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+margin-top: 3rem;
+
+}
+.memberImg3{
+  border-radius: 50%;
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 114px;
+margin-left: 3.5rem;
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+margin-top: 3rem;
+
+}
+.imgMember{
+      margin-bottom: 5rem;
+}
+.arrowImg{
+  margin-top: 5.8rem;
+  width: 1.7rem;
+}
+.msjTrue{
+  position: absolute;
+  width: 327px;
+  height: 280px;
+  background-image: linear-gradient(95deg, #1F3262 0%, #4A4D9B 40%, #11e7f6 100%);
+  margin-left: 2.7rem;
+  animation: fromRight 300ms linear;
+  border-radius: 15px;
+  border: none;
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+.xDiv{
+  margin-top: 2rem;
+}
+.msjText{
+   color: #FAFAFA;
+   font-size: 35px;
+}
+.textP{
+  margin: 0;
+}
+.textMsj{
+  color: #FAFAFA;
+  font-size: 18px;
+}
+.inputsLog{
+  margin-right: 4rem;
+}
+#rememberText{
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.Line-1 {
+  width: 264px;
+  height: 1px;
+  margin: 23px 55px 20px 56px;
+  background-color: #cdcdcd;
+}
+/* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
+
