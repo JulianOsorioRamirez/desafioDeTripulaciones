@@ -6,9 +6,9 @@ import React, { useState, useEffect } from "react";
 
 
 //Componente funcional -> 
-function CheckForm() {
+function CheckForm(props) {
 
-let name = "Juan"
+let name = props.usuario
 let location = "Madrid"
 const [isShown, setIsShown] = useState(true);
 

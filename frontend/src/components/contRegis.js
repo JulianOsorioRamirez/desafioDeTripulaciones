@@ -14,7 +14,12 @@ function ContRegis() {
   const [sendPostalCode, setDataToPostalCode] = useState("");
   const [state, setState] = useState("");
   const [isShown, setIsShown] = useState(true);
-  const[options,setOptions] = useState("")
+  const[user,setUser] = useState("")
+ 
+  
+
+
+
   const handleClick = event => {
     const requestOptions = {
       method: "POST",
@@ -32,16 +37,26 @@ function ContRegis() {
 
     fetch("registro", requestOptions)
       .then((response) => response.json())
-      .then((res) => console.log(setState(res)));
-      setIsShown(current => !current);
-      if(isShown === false){
-        window.location.assign("/Options")
-      }
+      .then((res) => {
+        setUser(
+        
+         res.usuario.Nombre
+        
+      )
+         setIsShown(current => !current);
+        })
+     
+    
       
       
 
   }
 
+const siguiente = event => {
+    if(isShown === false){
+       window.location.assign(`/Options/${user}`)
+      }
+}
   // const sendData = () => {
     
     
@@ -52,7 +67,7 @@ function ContRegis() {
     <div className="BASE">
       <div className="msjTrue"style={{display: isShown ? 'none' : 'block'}}>
         <div className="xDiv">
-        <img onClick={handleClick}  src={xcircle}/>
+        <img onClick={siguiente}  src={xcircle}/>
         </div>
         <div className="msjText">
            <p className="textP">!ENHORABUENA!</p>

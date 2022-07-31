@@ -19,15 +19,15 @@ function Main(props) {
       <Route path="/Regist" element={<RegistView />} />
 
       <Route path="checkView" element={<Checkview />} />
-      <Route path="/categories" element={<CategTotal />} />
+      <Route path="/categories/:usuario" element={<CategTotal />} />
    
 
 
 
 
 
-      <Route path="/Options" element={<OptionsUsers />} />
-      <Route path="/checkView" element={<Checkview />} />
+      <Route path="/Options/:usuario" element={<OptionsUsers />} />
+      <Route path="/checkView/:usuario" element={<Checkview />} />
 
       </Routes>
     </div>

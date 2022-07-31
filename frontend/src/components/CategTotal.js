@@ -7,11 +7,14 @@ import Amigos from '../assets/images/imgAmigos.png'
 import DiaDia from '../assets/images/imgDiaDia.png'
 import Burocracia from '../assets/images/imgBurocracia.png'
 import Servicios from '../assets/images/imgServicios.png'
+import { useParams } from "react-router-dom";
+
 
 function CategTotal (){
+  const { usuario} = useParams()
   return (
     <div>
-       <Navbar/>
+       <Navbar usuario={usuario}/>
        <div className='ContainerCateg'>
 
       <img id='imgCabecera' src={CabeceraCateg}/>

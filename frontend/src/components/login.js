@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 
 
 function Login(props) {
+  const navigate = useNavigate()
   const [sendPhone, setDataToPhone] = useState("")
   const [sendPass, sendDataPass] = useState("")
+  const [mensaje, setMensaje] = useState("")
 
   function sendLogin() {
     const requestOptions = {
@@ -21,7 +23,16 @@ function Login(props) {
 
     fetch("login", requestOptions)
       .then((response) => response.json())
+      .then((res) => {
+       setMensaje(res.logeado)
+        if (res.logeado!==false){
+          navigate(`/categories/${res.logeado}`)
+        }
 
+    });
+  }
+  function sendRegister() {
+navigate("/Regist")
   }
 
 
@@ -30,63 +41,58 @@ function Login(props) {
 
     <div>
 
-    <div className="loginInputs">  
-      <div className="phoneBox">
-        <p className="telText">Móvil</p>
-        <input
-          className="telf"
-          id="telfLog"
-          type="text"
-          onChange={(e) => setDataToPhone(e.target.value)}
+      <div className="loginInputs">
+        <div className="phoneBox">
+           <div className="loginInputs">
+            <div className="inputsLog">
+              <div className="COMPLETE">
+                <label>Movil</label>
+                <input
+                  className="Rectangle-1"
+                  id="telfLog"
+                  type="text"
+                  placeholder="Introduce tu numero"
+                  onChange={(e) => setDataToPhone(e.target.value)}
+                />
+              </div>
+              <div className="COMPLETE">
+                <label>Contraseña</label>
+                <input
+                  className="Rectangle-1"
+                  id="telfLog"
+                  type="text"
+                  placeholder="Pon tu contraseña"
+                  onChange={(e) => sendDataPass(e.target.value)}
+                />
+                {mensaje ===false?<p>"El telefono o la contraseña no existen"</p>:""}
+              </div>
 
-        />
+            </div>
 
-    <div className="loginInputs">
-      <div className="inputsLog">
-      <div className="COMPLETE">
-            <label>Movil</label>
-            <input
-              className="Rectangle-1"
-              id="telfLog"
-              type="text"
-              placeholder="Introduce tu numero"
-              onChange={(e) => setDataToPhone(e.target.value)}
-            />
+
+            <label className="labelCheckRemember">
+              <input type="checkbox" className="check2" id="check1" />
+              <span className="spanRemember">Recordar mi contraseña</span>
+            </label>
+            <div className="button">
+              <button id="buttonLogin" onClick={sendLogin}>Entrar</button>
+
+            </div>
+            <div className="passRemember">
+              <label for="remember" id="rememberText">¿Has olvidado tu contraseña?</label>
+            </div>
+            <div class="Line-1"></div>
+
+            <label id="newMemberTxt">¿Eres Nuevo?</label>
+            <button id="buttonLogin2" onClick={sendRegister}>Regístrate</button>
+
+
           </div>
-      <div className="COMPLETE">
-            <label>Contraseña</label>
-            <input
-              className="Rectangle-1"
-              id="telfLog"
-              type="text"
-              placeholder="Pon tu contraseña"
-              onChange={(e) => sendDataPass(e.target.value)}
-            />
-          </div>
 
-      </div>
-      
-
-      <label className="labelCheckRemember">
-        <input type="checkbox" className="check2" id="check1" />
-        <span className="spanRemember">Recordar mi contraseña</span>
-      </label>
-      <div className="button">
-      <button id = "buttonLogin" onClick={sendLogin}>Entrar</button>
-          
         </div>
-        <div className="passRemember">
-       <label for="remember" id="rememberText">¿Has olvidado tu contraseña?</label>
-       </div>
-       <div class="Line-1"></div>
-     
-        <label id="newMemberTxt">¿Eres Nuevo?</label>
-      <button id = "buttonLogin2" onClick={sendLogin}>Regístrate</button>
-        
-      
+      </div>
     </div>
 
-    </div>
   )
 }
 

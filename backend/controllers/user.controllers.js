@@ -2,89 +2,91 @@ const bcrypt = require("bcrypt");
 const Usuarios = require('../models/userModels')
 
 const user = {
-   registrer : (req,res) => {
+  registrer: (req, res) => {
 
-      const nameExp = new RegExp(/^([A-Za-z]{1,15})$/);
-      const unNameExp = new RegExp(/^([A-Za-z]{1,15})$/);
-      const telfExp = new RegExp(/^\d{9}$/);
-      const dniExp = new RegExp(/^\d{8}[a-zA-Z]$/);
-      const passExp = new RegExp(
-        /(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}/
-      );
-      const postalCode = new RegExp(/^(?:0[1-9]\d{3}|[1-4]\d{4}|5[0-2]\d{3})$/)
-    
-    
+    const nameExp = new RegExp(/^([A-Za-z]{1,15})$/);
+    const unNameExp = new RegExp(/^([A-Za-z]{1,15})$/);
+    const telfExp = new RegExp(/^\d{9}$/);
+    const passExp = new RegExp(
+      /(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}/
+    );
+    const postalCode = new RegExp(/^(?:0[1-9]\d{3}|[1-4]\d{4}|5[0-2]\d{3})$/)
+
+
     const name = req.body.name
     const unName = req.body.unName
-    const dni = req.body.dni
     const pass = req.body.pass
     const number = req.body.number
     const cp = req.body.postalCode
     const passConf = req.body.passConf
-    
+    let fecha = new Date()
+        var fecha1 = fecha.getFullYear() + '-' + (fecha.getMonth() + 1) + '-' + fecha.getDate();
 
-    
-    
+
+
     if (
-      
+
       !nameExp.test(name) ||
       !unNameExp.test(unName) ||
-      !dniExp.test(dni) ||
       !passExp.test(pass) ||
       pass != passConf ||
-      !telfExp.test(number)||
+      !telfExp.test(number) ||
       !postalCode.test(cp)
     ) {
-      
+
+
       //res.send
-    
-    }else {
-     bcrypt.hash(pass, 10, (err, palabraSecretaEncriptada) => {
+
+    } else {
+      bcrypt.hash(pass, 10, (err, palabraSecretaEncriptada) => {
         if (err) {
-         
+
         } else {
-      
+
           palabraEncriptada = palabraSecretaEncriptada;
-         
-          
+
+
         }
         let userJson2 = {
-          name: name,
-          unName: unName,
-          dni: dni,
+          Nombre: name,
+          Apellidos: unName,
+          'Nombre y Apellidos': `${name} ${unName}`,
+          'Movil':number,
+          CP: cp,
           pass: palabraEncriptada,
-          number: number,
-          postalCode: cp,
-      };
+          'Foto miembro':'',
+          'fecha de inscripcion':fecha1
+          
+        };
         let UsuarioRegistrado = new Usuarios(userJson2)
         UsuarioRegistrado.save(function (err, UsuarioRegistrado) {
-           
-           
+res.json({usuario: UsuarioRegistrado})
+
         })
       });
-      res.send(true)
-     }
-   },
-   login : async (req,res) => {
-      const telf = req.body.telf
-      const pass = req.body.pass
-      var login = await Usuarios.findOne({ number: telf})
+      
+    }
+  },
+  login: async (req, res) => {
+    const telf = req.body.telf
+    const pass = req.body.pass
+    var login = await Usuarios.findOne({ Movil: telf })
 
-    
-      if(login.length==0){
-        res.json({logeado:false})
-      }else{
-        bcrypt.compare(pass, login.pass).then(function (result) {
-        if(result===true){
-           res.json({logeado: true})
-           
-      }else{
-        res.json({logeado:false})
-      }
+
+    if (login == null) {
+      res.json({ logeado: false })
+    } else {
+      bcrypt.compare(pass, login.pass).then(function (result) {
+        if (result === true) {
+          res.json({ logeado: login.Nombre })
+
+        } else {
+          res.json({ logeado: false })
+        }
       });
-         
-   }
-   
+
+    }
+
   }
 }
 

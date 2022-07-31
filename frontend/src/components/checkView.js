@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./logo1";
 import CheckForm from "./checkForm";
-
+import { useParams } from "react-router-dom";
 
 
 
@@ -10,7 +10,8 @@ import CheckForm from "./checkForm";
 
 //Componente funcional -> 
 function Checkview() {
-
+  const { usuario} = useParams()
+  
 
 
 
@@ -19,7 +20,7 @@ function Checkview() {
   return (
 <div>
 <Logo/>
-<CheckForm/>
+<CheckForm usuario={usuario}/>
 </div>
 
 

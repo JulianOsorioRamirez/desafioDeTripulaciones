@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Picture from '../assets/images/perfilPicture.png'
 import mailIcon from '../assets/images/mailIcon.svg'
 
-function Navbar() {
+function Navbar(props) {
 
     const [isShown, setIsShown] = useState(true);
 
@@ -25,7 +25,7 @@ function Navbar() {
                 </div>
                 <div id="saludo">
                     <img className='picture' src={Picture} />
-                    <h3>Hola, Emiliano</h3>
+                    <h3>Hola, {props.usuario}</h3>
                 </div>
 
 
