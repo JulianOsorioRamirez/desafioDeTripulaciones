@@ -1,15 +1,3 @@
-const mongo = require("mongodb");
-const MongoClient = mongo.MongoClient;
-const url = "mongodb://127.0.0.1:27017/";
-const mongoose = require("mongoose");
-const UserModel = require("../models/userModels");
-var productID;
-
-
-
-const connection = require("../database/sqlDataBase");
-const mysql = require("mysql");
-const { propfind } = require("moongose/routes");
 const bcrypt = require("bcrypt");
 const Usuarios = require('../models/userModels')
 
