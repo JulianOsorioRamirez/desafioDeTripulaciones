@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 
 
 function Login(props) {
+  const navigate = useNavigate()
   const [sendPhone, setDataToPhone] = useState("")
   const [sendPass, sendDataPass] = useState("")
+  const [mensaje, setMensaje] = useState("")
 
   function sendLogin() {
     const requestOptions = {
@@ -21,7 +23,16 @@ function Login(props) {
 
     fetch("login", requestOptions)
       .then((response) => response.json())
+      .then((res) => {
+       setMensaje(res.logeado)
+        if (res.logeado!==false){
+          navigate(`/categories/${res.logeado}`)
+        }
 
+    });
+  }
+  function sendRegister() {
+navigate("/Regist")
   }
 
 
@@ -31,8 +42,10 @@ function Login(props) {
     <div>
 
       <div className="loginInputs">
+
         
           <div className="loginInputs">
+
             <div className="inputsLog">
               <div className="COMPLETE">
                 <label>Movil</label>
@@ -53,6 +66,7 @@ function Login(props) {
                   placeholder="Pon tu contraseña"
                   onChange={(e) => sendDataPass(e.target.value)}
                 />
+
               </div>
 
             </div>
@@ -72,14 +86,18 @@ function Login(props) {
             <div class="Line-1"></div>
 
             <label id="newMemberTxt">¿Eres Nuevo?</label>
-            <button id="buttonLogin2" onClick={sendLogin}>Regístrate</button>
+
+            <button id="buttonLogin2" onClick={sendRegister}>Regístrate</button>
 
 
           </div>
-</div>
-</div>
-        
-        )
+
+        </div>
+      </div>
+    </div>
+
+  )
+
 }
 
         export default Login;

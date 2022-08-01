@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./logo1";
 import Options from "./options";
-
+import { useParams } from "react-router-dom";
 
 
 
@@ -12,7 +12,8 @@ import Options from "./options";
 
 function OptionsUsers() {
 
-
+  const { usuario} = useParams()
+  console.log(usuario)
 
 
 
@@ -20,7 +21,7 @@ function OptionsUsers() {
   return (
 <div>
  <Logo/>
- <Options/>
+ <Options usuario={usuario} />
  </div>
 
 

@@ -20,9 +20,13 @@ function Main(props) {
       <Route path="/login" element={<Principal />} />
       <Route path="/Regist" element={<RegistView />} />
       <Route path="checkView" element={<Checkview />} />
+
+      <Route path="/categories/:usuario" element={<CategTotal />} />
+
       <Route path="/categories" element={<CategTotal />} />
       <Route path="/categories2/:todo" element={<Categorias />} />
       <Route path="/voluntarioView" element={<VoluntarioView/>} />
+
 
 
    
@@ -31,8 +35,8 @@ function Main(props) {
 
 
 
-      <Route path="/Options" element={<OptionsUsers />} />
-      <Route path="/checkView" element={<Checkview />} />
+      <Route path="/Options/:usuario" element={<OptionsUsers />} />
+      <Route path="/checkView/:usuario" element={<Checkview />} />
 
       </Routes>
     </div>

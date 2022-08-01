@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 
+import Categorias from "./categorias";
+
+
+
 import { useNavigate } from "react-router-dom";
 
+
 function Inicio(props) {
-    const navigate = useNavigate()
+   
     function donar() {
         
         window.location.href = 'https://www.emancipatic.org/';

@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar';
+
+
+import { useParams } from "react-router-dom";
+
+
+function CategTotal (){
+  const { usuario} = useParams()
+
 import CabeceraCateg from '../assets/images/cabeceraCateg.png'
 
 
@@ -28,9 +36,10 @@ window.location.assign(`/categories2/${cambio.Categorias}`)
   
 
 },[cambio])
+
   return (
     <div>
-       <Navbar/>
+       <Navbar usuario={usuario}/>
        <div className='ContainerCateg'>
 
      <img id='imgCabecera' src={CabeceraCateg}/> 
