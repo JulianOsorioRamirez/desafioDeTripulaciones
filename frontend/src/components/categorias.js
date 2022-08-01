@@ -3,13 +3,13 @@ import Navbar from './Navbar';
 import { useParams } from "react-router-dom";
 import Voluntariosdisponibles from './voluntariosdisponibles';
 function Categorias (){
-   const { todo} = useParams()
-  const [categories, setCategories] = useState('');
+   const { todo, usuario} = useParams()
+   const [categories, setCategories] = useState('');
 
 
   
    useEffect(() => {
-   
+   console.log(usuario)
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,30 +25,26 @@ function Categorias (){
      .then((response) => response.json())
      .then((res)=> {
       setCategories(res)
-      console.log(categories)
+     
     
     
     })
- }, [todo]);
+ }, []);
 
- useEffect(()=>{
-  if(categories){
-    console.log(categories)
-  }
-}, [categories]);
+
 
 
   return (
     <div>
     
-        <Navbar/>
+    <Navbar usuario={usuario} />
     
  <div className='descriptCont'>
      <h4 id="titleCat">{categories == ""? "":categories.categorias2.Categorias}</h4>
     <p id="textCat">{categories == ""? "" :categories.categorias2.Descripcion}</p> 
 
   </div>
-        <Voluntariosdisponibles categoria={categories}/>
+        { categories!=""? <Voluntariosdisponibles categoria={categories}/> :"" }
   
 {/*         
 {categories ? categories.map((todo, i) =>

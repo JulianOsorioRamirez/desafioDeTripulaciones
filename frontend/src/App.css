@@ -852,6 +852,7 @@ span {
 /* *********************------ CATEGORIAS -------***************** */
 
 
+
 #imgCabecera {
   width: 414px;
   box-shadow: 10px black;
@@ -1541,18 +1542,47 @@ margin-top: 3rem;
 /* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
 
 .horizontal-scroll-wrapper {
-  width: 100px;
-  height:100%;
+  width: 200px;
+  height: 414px;
   overflow-y: auto;
   overflow-x: hidden;
-transform: rotate(-90deg);
-  transform-origin: right top;
+  transform: rotate(-90deg);
+  transform-origin: top;
   transform:rotate(-90deg) translateY(-100px);
+  
+  
+ 
 
 }
 .horizontal-scroll-wrapper > div {
-  
+  /* width: 100px;
+  height: 100px; */
   transform: rotate(90deg);
   transform-origin: right top;
+  width: 162px;
+  height: 169px;
+  margin: 0 32px 0 0; 
+  padding: 6px 8px 6px 3px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(22, 37, 48, 0.45);
+  background-color: #49bcc4;
+  flex-direction: column-reverse;
+}
+.voluntarios{
+  margin:0px;
+  width: 100%;
+ 
 }
 
+.imgCards1{
+  border-radius: 50%;
+  width: 50%;
+
+  /* left: 114px; */
+  
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  /* z-index: 3; */
+  margin-top: 1rem;
+}

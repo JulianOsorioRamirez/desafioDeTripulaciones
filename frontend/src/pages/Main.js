@@ -7,7 +7,7 @@ import Checkview from "../components/checkView";
 import CategTotal from "../components/CategTotal";
 
 import OptionsUsers from "../components/optionsView";
-import Categorias from "../components/Categorias";
+import Categorias from "../components/categorias";
 import VoluntarioView from "../components/voluntarioView"
 
 
@@ -23,8 +23,8 @@ function Main(props) {
 
       <Route path="/categories/:usuario" element={<CategTotal />} />
 
-      <Route path="/categories" element={<CategTotal />} />
-      <Route path="/categories2/:todo" element={<Categorias />} />
+     
+      <Route path="/categories2/:todo/:usuario" element={<Categorias />} />
       <Route path="/voluntarioView" element={<VoluntarioView/>} />
 
 

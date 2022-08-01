@@ -7,7 +7,7 @@ const solicitudes = {
 
        var solic =  await solicitudes.find() 
           
-        console.log(solic)
+      
         res.json(solic)
 
 
@@ -15,10 +15,10 @@ const solicitudes = {
     },
 
     postSolicitudes : async (req, res) => {
-console.log(req.body.Solicitudes)
+
         var postSolicit =  await Solicitudes.findOne({asunto: req.body.asunto}) 
            
-         console.log(postSolicit)
+       
         res.json({postSolicit});
  
  

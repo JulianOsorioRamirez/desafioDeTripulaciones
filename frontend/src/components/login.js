@@ -94,7 +94,7 @@ navigate("/Regist")
 
         </div>
       </div>
-    </div>
+    
 
   )
 

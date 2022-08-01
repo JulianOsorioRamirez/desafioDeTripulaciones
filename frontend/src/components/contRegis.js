@@ -39,7 +39,7 @@ function ContRegis() {
     fetch("registro", requestOptions)
       .then((response) => response.json())
       .then((res) => {
-        console.log(res.usuario.Nombre)
+        
         setUser(
        
          res.usuario.Nombre

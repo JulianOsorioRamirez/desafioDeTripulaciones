@@ -8,7 +8,7 @@ router.post("/registro",user.registrer);
 router.post("/login",user.login);
 router.get("/categories", categ.getCategories);
 router.post("/categories2", categ.postCategories2)
-router.post("/voluntariosdisponibles",voluntarios)
+router.post("/voluntariosdisponibles",voluntarios.buscar)
 router.get("/solicitudes", solicitudes.getSolicitudes)
  router.post("/solicitudes", solicitudes.postSolicitudes)
 // router.post("/logOut",user.logOut);

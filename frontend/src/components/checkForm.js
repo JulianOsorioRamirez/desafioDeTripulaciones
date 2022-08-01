@@ -1,16 +1,22 @@
 
 import React, { useState, useEffect } from "react";
-
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 //Componente funcional -> 
 function CheckForm(props) {
+  const navigate = useNavigate()
 
 let name = props.usuario
 let location = "Madrid"
 const [isShown, setIsShown] = useState(true);
+
+function fuerza1(){
+  navigate(`/categories/${name}`)
+}
 
 
 
@@ -74,7 +80,7 @@ return (
         <span className="span3">Solo mi municipio</span>
       </label>
        </div>
-      <input type="button" className="btncheck" value="Entrar"/>
+      <input type="button" className="btncheck" value="Entrar" onClick={fuerza1()}/>
     </div>
     <div className="msjTrue"style={{display: isShown ? 'none' : 'block'}}>
         <div className="xDiv">

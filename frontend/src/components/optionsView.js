@@ -13,7 +13,7 @@ import { useParams } from "react-router-dom";
 function OptionsUsers() {
 
   const { usuario} = useParams()
-  console.log(usuario)
+  
 
 
 
