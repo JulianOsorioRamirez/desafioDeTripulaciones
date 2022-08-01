@@ -42,8 +42,10 @@ navigate("/Regist")
     <div>
 
       <div className="loginInputs">
-        <div className="phoneBox">
-           <div className="loginInputs">
+
+        
+          <div className="loginInputs">
+
             <div className="inputsLog">
               <div className="COMPLETE">
                 <label>Movil</label>
@@ -64,7 +66,7 @@ navigate("/Regist")
                   placeholder="Pon tu contraseña"
                   onChange={(e) => sendDataPass(e.target.value)}
                 />
-                {mensaje ===false?<p>"El telefono o la contraseña no existen"</p>:""}
+
               </div>
 
             </div>
@@ -84,6 +86,7 @@ navigate("/Regist")
             <div class="Line-1"></div>
 
             <label id="newMemberTxt">¿Eres Nuevo?</label>
+
             <button id="buttonLogin2" onClick={sendRegister}>Regístrate</button>
 
 
@@ -94,6 +97,7 @@ navigate("/Regist")
     </div>
 
   )
+
 }
 
-export default Login;
+        export default Login;

@@ -147,8 +147,8 @@ body {
 
 #xContainer {
   border: 2px solid #EFEFEF;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   margin-left: 180px;
   margin-top: 45px;
@@ -160,10 +160,10 @@ body {
 
 #xLetter {
   color: #EFEFEF;
-  font-size: 20px;
+  font-size: 35px;
 
   margin-left: 1px;
-  margin-top: -3px;
+  margin-top: -10px;
 }
 
 .list {
@@ -849,7 +849,7 @@ span {
 /* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
 
 
-/* *********************------ CATEGTOTAL -------***************** */
+/* *********************------ CATEGORIAS -------***************** */
 
 
 #imgCabecera {
@@ -858,16 +858,11 @@ span {
   margin: 98px 0 64px;
 }
 
- #cards{
+  .cards{
 
- margin-bottom: 300px;
- }
-
-
-.cardsAssis{
-
-  width: 328px;
-  height: 135px;
+border: none;
+width: 328px;
+  height: 145px;
   float: left;
   margin-left: 45px;
   padding: 10px;
@@ -876,29 +871,24 @@ span {
   border-radius: 10px;
   padding: 5px;
   background-color: #EBEBEB;
-  box-shadow: 0px 10px 10px 0px gray;
-}
-
-.subcardAssis{
- 
-  margin-top: 0px;
-  border-radius: 10px;
-  height: 130px;
-  width: 323px;
+  box-shadow: 0px 10px 10px 0px gray, 4px 4px 4px 4px white inset;
   background-image: linear-gradient(to bottom, rgba(73, 188, 196, 0.22) 0%, rgba(223, 223, 223, 0) 100%);
-}
+ 
+ }
 
-.cardTitles{
+
+
+ .cardTitles{
   float: left;
-  margin: 20px 0px 25px 4px;
+  margin: 20px 0px 25px 20px;
 
 }
 
 .cardText{
   float: left;
   color: black;
-  font-size: 15px;
-  margin: 0px 6px 0px 3px;
+  font-size: 13px;
+  margin: -15px 6px 0px 3px;
   width: 240px;
 }
 
@@ -921,6 +911,48 @@ span {
   border-top-right-radius: 10px;
 } 
 
+/* ---------------------------************* CATEGORÍAS 2 *************---------------------*/
+
+.descriptCont{
+  border: 1px solid black;
+  height: 271px;
+  width: 414px;
+ background-color: #4A4D9B;
+  margin: 98px 0 64px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#titleCat{
+  color: #49BCC4;
+  font-size: 30px;
+}
+
+
+#textCat{
+  color: #EFEFEF;
+  font-size: 18px;
+  width: 370px;
+  margin: 0px auto;
+} 
+
+.cards2{
+
+ border: none;
+ width: 328px;
+   height: 145px;
+   float: left;
+   margin-left: 45px;
+   padding: 10px;
+   margin-bottom: 50px;
+   border: none;
+   border-radius: 10px;
+   padding: 5px;
+   background-color: #EBEBEB;
+   box-shadow: 0px 10px 10px 0px gray, 4px 4px 4px 4px white inset;
+   background-image: linear-gradient(to bottom, rgba(73, 188, 196, 0.22) 0%, rgba(223, 223, 223, 0) 100%);
+  
+  }
 #donate{
   position: relative;
   text-decoration: none;
@@ -1120,7 +1152,9 @@ button {
   margin-right: 5.5rem;
   margin-top: 2rem;
   font-family: 'BalooPaaji';
+
   margin-bottom: 5rem;
+
 }
 #newMemberTxt{
   margin-left: 7.5rem;
@@ -1331,6 +1365,7 @@ margin-top: 3rem;
   margin: 23px 55px 20px 56px;
   background-color: #cdcdcd;
 }
+
 .Ttulo-y-descripcin {
   width: 375px;
   height: 174px;
@@ -1492,3 +1527,32 @@ margin-top: 3rem;
   font-size: 18px;
 }
 /* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.TXT-PIC {
+  width: 327px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+}
+/* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height:100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-100px);
+
+}
+.horizontal-scroll-wrapper > div {
+  
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
