@@ -30,64 +30,56 @@ function Login(props) {
 
     <div>
 
-    <div className="loginInputs">  
-      <div className="phoneBox">
-        <p className="telText">Móvil</p>
-        <input
-          className="telf"
-          id="telfLog"
-          type="text"
-          onChange={(e) => setDataToPhone(e.target.value)}
-
-        />
-
-    <div className="loginInputs">
-      <div className="inputsLog">
-      <div className="COMPLETE">
-            <label>Movil</label>
-            <input
-              className="Rectangle-1"
-              id="telfLog"
-              type="text"
-              placeholder="Introduce tu numero"
-              onChange={(e) => setDataToPhone(e.target.value)}
-            />
-          </div>
-      <div className="COMPLETE">
-            <label>Contraseña</label>
-            <input
-              className="Rectangle-1"
-              id="telfLog"
-              type="text"
-              placeholder="Pon tu contraseña"
-              onChange={(e) => sendDataPass(e.target.value)}
-            />
-          </div>
-
-      </div>
-      
-
-      <label className="labelCheckRemember">
-        <input type="checkbox" className="check2" id="check1" />
-        <span className="spanRemember">Recordar mi contraseña</span>
-      </label>
-      <div className="button">
-      <button id = "buttonLogin" onClick={sendLogin}>Entrar</button>
-          
-        </div>
-        <div className="passRemember">
-       <label for="remember" id="rememberText">¿Has olvidado tu contraseña?</label>
-       </div>
-       <div class="Line-1"></div>
-     
-        <label id="newMemberTxt">¿Eres Nuevo?</label>
-      <button id = "buttonLogin2" onClick={sendLogin}>Regístrate</button>
+      <div className="loginInputs">
         
-      
-    </div>
+          <div className="loginInputs">
+            <div className="inputsLog">
+              <div className="COMPLETE">
+                <label>Movil</label>
+                <input
+                  className="Rectangle-1"
+                  id="telfLog"
+                  type="text"
+                  placeholder="Introduce tu numero"
+                  onChange={(e) => setDataToPhone(e.target.value)}
+                />
+              </div>
+              <div className="COMPLETE">
+                <label>Contraseña</label>
+                <input
+                  className="Rectangle-1"
+                  id="telfLog"
+                  type="text"
+                  placeholder="Pon tu contraseña"
+                  onChange={(e) => sendDataPass(e.target.value)}
+                />
+              </div>
 
-    </div>
-  )
+            </div>
+
+
+            <label className="labelCheckRemember">
+              <input type="checkbox" className="check2" id="check1" />
+              <span className="spanRemember">Recordar mi contraseña</span>
+            </label>
+            <div className="button">
+              <button id="buttonLogin" onClick={sendLogin}>Entrar</button>
+
+            </div>
+            <div className="passRemember">
+              <label for="remember" id="rememberText">¿Has olvidado tu contraseña?</label>
+            </div>
+            <div class="Line-1"></div>
+
+            <label id="newMemberTxt">¿Eres Nuevo?</label>
+            <button id="buttonLogin2" onClick={sendLogin}>Regístrate</button>
+
+
+          </div>
+</div>
+</div>
+        
+        )
 }
 
-export default Login;
+        export default Login;

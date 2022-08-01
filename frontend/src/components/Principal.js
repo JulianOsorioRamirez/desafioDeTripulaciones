@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import Categoria from "./categoria";
+
 import Inicio from "./inicio";
 import Login from "./login";
 import Logo from "./logo";

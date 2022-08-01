@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Categorias from "./categorias";
+
 import { useNavigate } from "react-router-dom";
 
 function Inicio(props) {
@@ -20,7 +20,6 @@ function Inicio(props) {
                 </div>
             </div>
 
-<Categorias/>
 
 
         </div>
