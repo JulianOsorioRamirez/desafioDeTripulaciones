@@ -5,6 +5,7 @@ import xcircle from "../assets/images/x-circle.png"
 import arrow from "../assets/images/arrow-right-circle.png"
 
 function ContRegis() {
+  const [showSecondPart,setShowSecordPart]=useState(false)
   const [sendName, setDataToName] = useState("");
   const [sendUnName, setDataToUname] = useState("");
   // const [sendDni, setDataToDni] = useState("");
@@ -38,11 +39,13 @@ function ContRegis() {
     fetch("registro", requestOptions)
       .then((response) => response.json())
       .then((res) => {
+        console.log(res.usuario.Nombre)
         setUser(
-        
+       
          res.usuario.Nombre
         
       )
+       
          setIsShown(current => !current);
         })
      
@@ -67,7 +70,7 @@ const siguiente = event => {
     <div className="BASE">
       <div className="msjTrue"style={{display: isShown ? 'none' : 'block'}}>
         <div className="xDiv">
-        <img onClick={siguiente}  src={xcircle}/>
+        <img className="xcircle" onClick={siguiente}  src={xcircle}/>
         </div>
         <div className="msjText">
            <p className="textP">!ENHORABUENA!</p>
@@ -76,13 +79,17 @@ const siguiente = event => {
          Ya te has dado de alta y tienes una cuenta en RED EmancipaTIC
       </p>
       </div>
-      {state === "" ? (
+
+
+      {!showSecondPart ? (
+
+
         <div>
           <div className="COMPLETE">
             <label>Nombre</label>
             <input
               className="Rectangle-1"
-              id="telfLog"
+              name="name"
               type="text"
               placeholder="Pon tu Nombre"
               onChange={(e) => setDataToName(e.target.value)}
@@ -92,7 +99,7 @@ const siguiente = event => {
             <label>Apellidos</label>
             <input
               className="Rectangle-1"
-              id="telfLog"
+               name="second_name"
               type="text"
               placeholder="Pon tus Apellidos"
               onChange={(e) => setDataToUname(e.target.value)}
@@ -102,14 +109,14 @@ const siguiente = event => {
             <label>Movil</label>
             <input
               className="Rectangle-1"
-              id="telfLog"
+              name="phone"
               type="text"
               placeholder="Pon tu numero"
               onChange={(e) => setDataToNumber(e.target.value)}
             />
           </div>
           <span className="-de-2">1 de 2</span>
-          <button onClick={() => setState("2")}>
+          <button onClick={() => setShowSecordPart(true)}>
             Siguiente{" "}
             <div className="imgMember">
            <img className="arrowImg" src={arrow} alt="" />
@@ -117,14 +124,15 @@ const siguiente = event => {
           </button>
         </div>
       ) : (
-        <div>
-          <div className="COMPLETE">
+<>
+<div className="COMPLETE">
             <label>Codigo postal</label>
             <input
               className="Rectangle-1"
-              id="telfLog"
+               name="cp"
               type="text"
               placeholder="Pon tu codigo postal"
+    
               onChange={(e) => setDataToPostalCode(e.target.value)}
             />
           </div>
@@ -132,9 +140,10 @@ const siguiente = event => {
             <label>Contraseña</label>
             <input
               className="Rectangle-1"
-              id="telfLog"
+               name="pass"
               type="password"
               placeholder="Pon tu contraseña "
+    
               onChange={(e) => setDataToPass(e.target.value)}
             />
           </div>
@@ -142,17 +151,75 @@ const siguiente = event => {
             <label>Repite tu contraseña</label>
             <input
               className="Rectangle-1"
-              id="telfLog"
+               name="pass2"
               type="password"
               placeholder="Repite tu contraseña"
+     
               onChange={(e) => setDataToConPass(e.target.value)}
             />
           </div>
+
+          <label className="labelCheckR">
+          <input type="checkbox" className="check2" id="check1" />
+          <span className="spanR">He leido y acepto la Politica de privacidad</span>
+          </label >
+          <div className="span-de-3">
           <span className="-de-3">2 de 2</span>
+          </div>
+          
+
+          <button onClick={handleClick}>Crear Cuenta</button>
+
+      </>
+        
+     /*    <div>
+          <div className="COMPLETE">
+            <label>Codigo postal</label>
+            <input
+              className="Rectangle-1"
+               name="cp"
+              type="text"
+              placeholder="Pon tu codigo postal"
+    
+              onChange={(e) => setDataToPostalCode(e.target.value)}
+            />
+          </div>
+          <div className="COMPLETE">
+            <label>Contraseña</label>
+            <input
+              className="Rectangle-1"
+               name="pass"
+              type="password"
+              placeholder="Pon tu contraseña "
+    
+              onChange={(e) => setDataToPass(e.target.value)}
+            />
+          </div>
+          <div className="COMPLETE">
+            <label>Repite tu contraseña</label>
+            <input
+              className="Rectangle-1"
+               name="pass2"
+              type="password"
+              placeholder="Repite tu contraseña"
+     
+              onChange={(e) => setDataToConPass(e.target.value)}
+            />
+          </div>
+
+          <label className="labelCheckR">
+          <input type="checkbox" className="check2" id="check1" />
+          <span className="spanR">He leido y acepto la Politica de privacidad</span>
+          </label >
+          <div className="span-de-3">
+          <span className="-de-3">2 de 2</span>
+          </div>
+          
 
           <button onClick={handleClick}>Crear Cuenta</button>
           
-        </div>
+        </div> */
+   
         
       )}
       

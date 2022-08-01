@@ -818,6 +818,11 @@ span {
   margin-right: 11.6rem;
   margin-bottom: 15px;
 }
+.labelCheckR{
+  
+  margin-bottom: 15px;
+  margin-left: 0.5rem;
+}
 
 .labelCheck9 {
   margin-right: 9.8rem;
@@ -1111,10 +1116,11 @@ button {
   font-family: 'BalooPaaji';
 }
 #buttonLogin2{
-  width: 250px;
+  width: 261px;
   margin-right: 5.5rem;
   margin-top: 2rem;
   font-family: 'BalooPaaji';
+  margin-bottom: 5rem;
 }
 #newMemberTxt{
   margin-left: 7.5rem;
@@ -1324,5 +1330,165 @@ margin-top: 3rem;
   height: 1px;
   margin: 23px 55px 20px 56px;
   background-color: #cdcdcd;
+}
+.Ttulo-y-descripcin {
+  width: 375px;
+  height: 174px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  margin: 96px 0 38px;
+  padding: 48px 24px 32px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 10px 0 rgba(53, 53, 53, 0.25);
+  background-image: linear-gradient(to bottom, #efefef 0%, #ebebeb 100%);
+}
+.userTextChat {
+  width: 327px;
+  height: 36px;
+  flex-grow: 0;
+  font-size: 28px;
+  margin-top: 0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #49bcc4;
+}
+.userMsjChat{
+  width: 327px;
+  height: 54px;
+  flex-grow: 0;
+  margin: 0;
+  /* font-family: AtkinsonHyperlegible !important; */
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+}
+.CONVERSACIN-CHAT {
+  width: 375px;
+  height: 504px;
+  margin: 38px 0 0;
+  padding: 8px 0 0;
+  margin-top: 5rem;
+}
+.Burbuja {
+  width: 267px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+  padding: 6px 12px;
+  border-radius: 18px;
+  background-color: #cdcdcd;
+}
+.Burbuja2 {
+  width: 267px;
+  height: 81px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 5rem;
+  margin-left: 2rem;
+
+  padding: 6px 12px;
+  border-radius: 18px;
+  background-color: #cdcdcd;
+}
+.-Mensaje {
+  width: 243px;
+  height: 108px;
+  flex-grow: 0;
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+.-Mensaje2{
+  width: 243px;
+  height: 108px;
+  flex-grow: 0;
+  
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+}
+.-Mensaje3 {
+  width: 243px;
+ 
+  flex-grow: 0;
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+
+.BURBUJAS-CHAT {
+  width: 271px;
+  height: 49px;
+  background-color: #4a4d9b;
+  border-radius: 18px;
+  margin-left: 8rem;
+}
+.divMsjChat2{
+  margin-left: 2rem;
+}
+.fondo-campo-input {
+  width: 327px;
+  height: 36px;
+  margin: 0 1px 0 0;
+  padding: 6px 20px 6px 22px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+.BASEChat {
+  width: 375px;
+  height: 64px;
+ 
+  padding: 14px 23px 14px 24px;
+  background-color: #1f3262;
+}
+.chatInput {
+  width: 327px;
+  height: 36px;
+  margin-top: 7px;
+  margin-right: 6px;
+
+  font-size: 20px;
+  padding: 6px 20px 6px 22px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+.xcircle{
+  width: 40px;
+}
+.spanR{
+  font-size: 18px;
 }
 /* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */

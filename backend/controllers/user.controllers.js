@@ -3,6 +3,7 @@ const Usuarios = require('../models/userModels')
 
 const user = {
   registrer: (req, res) => {
+    
 
     const nameExp = new RegExp(/^([A-Za-z]{1,15})$/);
     const unNameExp = new RegExp(/^([A-Za-z]{1,15})$/);
@@ -24,6 +25,7 @@ const user = {
 
 
 
+
     if (
 
       !nameExp.test(name) ||
@@ -33,11 +35,11 @@ const user = {
       !telfExp.test(number) ||
       !postalCode.test(cp)
     ) {
-
-
+  
       //res.send
 
     } else {
+      
       bcrypt.hash(pass, 10, (err, palabraSecretaEncriptada) => {
         if (err) {
 
