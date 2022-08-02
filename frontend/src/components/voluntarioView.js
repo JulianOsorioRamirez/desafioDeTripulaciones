@@ -2,13 +2,14 @@
 import React, { useState, useEffect } from "react";
 import Navbar from './Navbar';
 import VoluntarioCard from "./VoluntarioCard"
-
+import { useParams } from "react-router-dom";
 
 
 
 
 //Componente funcional -> 
 function VoluntarioView() {
+  const { voluntario, usuario} = useParams()
 
 
 
@@ -17,8 +18,8 @@ function VoluntarioView() {
 
   return (
 <div>
-    <Navbar/>
-    <VoluntarioCard/>
+    <Navbar usuario={usuario}/>
+    <VoluntarioCard voluntario={voluntario}/>
 
 </div>
 

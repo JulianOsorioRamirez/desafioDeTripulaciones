@@ -1541,6 +1541,8 @@ margin-top: 3rem;
 }
 /* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
 
+
+
 .horizontal-scroll-wrapper {
   width: 200px;
   height: 414px;
@@ -1549,24 +1551,25 @@ margin-top: 3rem;
   transform: rotate(-90deg);
   transform-origin: top;
   transform:rotate(-90deg) translateY(-100px);
-  
-  
+  margin-top: 7rem;
+
+
  
 
 }
 .horizontal-scroll-wrapper > div {
-  /* width: 100px;
-  height: 100px; */
+ 
   transform: rotate(90deg);
   transform-origin: right top;
   width: 162px;
-  height: 169px;
+  height: 191px;
   margin: 0 32px 0 0; 
   padding: 6px 8px 6px 3px; 
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(22, 37, 48, 0.45);
   background-color: #49bcc4;
   flex-direction: column-reverse;
+
 }
 .voluntarios{
   margin:0px;
@@ -1576,13 +1579,134 @@ margin-top: 3rem;
 
 .imgCards1{
   border-radius: 50%;
-  width: 50%;
+  width: 60%;
 
-  /* left: 114px; */
   
+
   flex: none;
   order: 3;
   flex-grow: 0;
-  /* z-index: 3; */
-  margin-top: 1rem;
+  
+ 
+}
+.cardTitles1{
+  color: #fafafa;
+  font-size: 22px;
+  margin: 0;
+}
+.voluntariesDisponible{
+  font-size: 22px;
+}
+
+
+
+
+
+
+.TXT-PIC {
+
+  height: 304px;
+  display: flex;
+  flex-direction: column-reverse;;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 4px;
+  padding: 0;
+  margin-left: 3rem;
+}
+.voluntarioName {
+  width: 327px;
+  height: 48px;
+  flex-grow: 0;
+
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3262;
+  margin: 0;
+}
+.Valoraciones {
+  width: 300px;
+  height: 36px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin-left: 3rem;
+}
+.starImg{
+  width: 20px;
+}
+.numStar{
+
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top: 2.2rem;
+
+  color: black;
+
+}
+.-opiniones {
+  height: 27px;
+    flex-grow: 0;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333;
+    margin-left: 0.5em;
+    margin-top: 24px;
+}
+.Aadir-opinin {
+  margin: 0;
+  font-size: 20px;
+
+}
+.voluntarioDescripcion{
+  width: 247px;
+  height: 162px;
+
+  margin-left: 5.5rem;
+  margin-top: 3rem;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+.questText{
+  margin-top: 2rem;
+  margin-right: 4rem;
+}
+.li{
+  width: 155px;
+  margin-left: 4rem;
+}
+.voluntarioImg{
+  border-radius: 50%;
+  max-width: 195px;
+
+
+left: 114px;
+
+flex: none;
+order: 3;
+flex-grow: 0;
+
+margin-top: 1rem;
+
 }

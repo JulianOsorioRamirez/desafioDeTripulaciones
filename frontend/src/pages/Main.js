@@ -25,7 +25,7 @@ function Main(props) {
 
      
       <Route path="/categories2/:todo/:usuario" element={<Categorias />} />
-      <Route path="/voluntarioView" element={<VoluntarioView/>} />
+      <Route path="/voluntarioView/:voluntario/:usuario" element={<VoluntarioView/>} />
 
 
 

@@ -9,7 +9,7 @@ function Categorias (){
 
   
    useEffect(() => {
-   console.log(usuario)
+   
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -44,16 +44,9 @@ function Categorias (){
     <p id="textCat">{categories == ""? "" :categories.categorias2.Descripcion}</p> 
 
   </div>
-        { categories!=""? <Voluntariosdisponibles categoria={categories}/> :"" }
+        { categories!=""? <Voluntariosdisponibles categoria={categories} usuario={usuario}/>  :"" }
   
-{/*         
-{categories ? categories.map((todo, i) =>
-    
-    <div className='cards2'>  
-  <img className="imgCards" src={require(`../assets/images/`+todo.img)}/>
-  <h4 className='cardTitles'>{todo.Categorias}</h4>
-  <p className='cardText'>{todo.Descripcion}</p>
- </div> ) : " "} */}
+
     
     </div>
 
