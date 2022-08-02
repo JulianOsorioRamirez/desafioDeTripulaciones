@@ -9,7 +9,7 @@ import CategTotal from "../components/CategTotal";
 import OptionsUsers from "../components/optionsView";
 import Categorias from "../components/categorias";
 import VoluntarioView from "../components/voluntarioView"
-
+import Chatview from "../components/Chatview";
 
 
 function Main(props) {
@@ -26,7 +26,7 @@ function Main(props) {
      
       <Route path="/categories2/:todo/:usuario" element={<Categorias />} />
       <Route path="/voluntarioView/:voluntario/:usuario" element={<VoluntarioView/>} />
-
+      <Route path="/chatView" element={<Chatview />} />
 
 
    

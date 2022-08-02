@@ -1,4 +1,5 @@
 const Voluntarios = require('../models/voluntariosModels')
+const Opiniones = require('../models/opinionesModels')
 
 const voluntarios = {
     buscar : async (req, res) => {
@@ -17,6 +18,10 @@ const voluntarios = {
         var voluntario = await Voluntarios.findOne({nombreApellidos : req.body.nombre})
         res.json({voluntario})
         
+    },
+    buscar2 : async (req, res) => {
+        var opinion = await Opiniones.find({nombreVoluntario : req.body.nombre})
+        res.json({opinion})
     }
 
 }

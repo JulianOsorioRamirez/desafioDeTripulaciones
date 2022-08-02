@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 import Navbar from './Navbar';
 import { useParams } from "react-router-dom";
 import Voluntariosdisponibles from './voluntariosdisponibles';
+import Solicitudes from './Solicitudes/Solicitudes';
+
 function Categorias (){
    const { todo, usuario} = useParams()
    const [categories, setCategories] = useState('');
@@ -45,7 +47,7 @@ function Categorias (){
 
   </div>
         { categories!=""? <Voluntariosdisponibles categoria={categories} usuario={usuario}/>  :"" }
-  
+  <Solicitudes/>
 
     
     </div>

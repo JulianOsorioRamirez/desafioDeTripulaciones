@@ -5,7 +5,7 @@ const solicitudes = {
 
     getSolicitudes : async (req, res) => {
 
-       var solic =  await solicitudes.find() 
+       var solic =  await Solicitudes.find() 
           
       
         res.json(solic)

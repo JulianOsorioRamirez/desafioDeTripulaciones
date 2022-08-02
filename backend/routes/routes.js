@@ -12,6 +12,7 @@ router.post("/voluntariosdisponibles",voluntarios.buscar)
 router.post("/voluntario",voluntarios.buscar1)
 router.get("/solicitudes", solicitudes.getSolicitudes)
  router.post("/solicitudes", solicitudes.postSolicitudes)
+ router.post("/opinion", voluntarios.buscar2)
 // router.post("/logOut",user.logOut);
 
 

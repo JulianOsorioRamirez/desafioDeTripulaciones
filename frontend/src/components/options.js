@@ -13,7 +13,9 @@ function Options(props) {
   if (typeUser === "ambos"||typeUser === "voluntario"||typeUser === "Miembro") {
     window.location.assign(`/checkView/${props.usuario}`)
   }
- 
+ if(typeUser=== "miembro"){
+  window.location.assign(`/categories/${props.usuario}`)
+ }
   
   
 

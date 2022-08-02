@@ -29,7 +29,7 @@ function Voluntariosdisponibles(props) {
 
 
     return (
-<div>
+<div className="opiniones2">
     <h1 className="voluntariesDisponible">Voluntarios disponibles</h1>
         <div className="horizontal-scroll-wrapper">
             {voluntarios !="" ? voluntarios.map((todo, i) =>
