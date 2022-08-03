@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import ChatComponents from "./chatComponents";
-
+import { useParams } from "react-router-dom";
 
 
 
@@ -12,13 +12,13 @@ import ChatComponents from "./chatComponents";
 function Chatview() {
 
 
-
+  const { usuario } = useParams()
 
 
 
   return (
 <div>
-<Navbar/>
+<Navbar usuario={usuario}/>
 <ChatComponents/>
 </div>
 

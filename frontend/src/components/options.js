@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import member from "../assets/images/member.png"
 import voluntary from "../assets/images/voluntariosImg.png"
-import Ambos from "../assets/images/Ambos.png"
+import Ambos from "../assets/images/ambos.png"
 
 
 function Options(props) {

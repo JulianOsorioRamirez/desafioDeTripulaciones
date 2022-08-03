@@ -62,7 +62,9 @@ navigate("/Regist")
                 <input
                   className="Rectangle-1"
                   id="telfLog"
-                  type="text"
+                  type="password"
+                  pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}"
+                  title="La contraseña ha de tener al menos una mayúscula, minúculas y un número. Mínimo 6 caracteres, máximo 16."
                   placeholder="Pon tu contraseña"
                   onChange={(e) => sendDataPass(e.target.value)}
                 />

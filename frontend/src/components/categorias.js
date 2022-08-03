@@ -47,7 +47,7 @@ function Categorias (){
 
   </div>
         { categories!=""? <Voluntariosdisponibles categoria={categories} usuario={usuario}/>  :"" }
-  <Solicitudes/>
+  <Solicitudes usuario={usuario}/>
 
     
     </div>

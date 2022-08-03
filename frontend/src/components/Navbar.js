@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import Picture from '../assets/images/perfilPicture.png'
 import mailIcon from '../assets/images/mailIcon.svg'
 
+
 function Navbar(props) {
 
     const [isShown, setIsShown] = useState(true);
+    const [isActive, setIsActive] = useState(false);
 
     const handleClick = event => {
         setIsShown(current => !current);
@@ -19,9 +21,14 @@ function Navbar(props) {
 
                 <img src={mailIcon} id="mailIcon" />
 
-                <div id="burgerBox">
-                    <p id="burgerText">Menú</p>
-                    <p id='hamburguesa' onClick={handleClick}>p</p>
+                <div id="burgerBox" onClick={handleClick}>
+                    <p id="burgerText" >Menú</p>
+                    <div className='bars__menu'>
+                    <span className='line1__bars-menu' ></span>
+                    <span className='line2__bars-menu' ></span>
+                    <span className='line3__bars-menu' ></span>
+                    </div>
+                  
                 </div>
                 <div id="saludo">
                     <img className='picture' src={Picture} />

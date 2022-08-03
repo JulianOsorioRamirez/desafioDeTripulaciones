@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './Solicitudes.css'
 import Arrow from '../../assets/images/arrow-right-circle.png';
 
-function Solicitudes (){
+function Solicitudes (props){
 
     const [solicitudes, setSolicitudes]  = useState('');
     const [cambio, setCambio] = useState('');
 
-  
+
 
     
     useEffect(() => {
@@ -20,7 +20,7 @@ function Solicitudes (){
       
     useEffect(() => {
       if (cambio !== '') {
-        window.location.assign('/chatView')
+        window.location.assign(`/chatView/${props.usuario}`)
       }
 
 

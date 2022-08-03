@@ -73,7 +73,7 @@ const siguiente = event => {
         <img className="xcircle" onClick={siguiente}  src={xcircle}/>
         </div>
         <div className="msjText">
-           <p className="textP">!ENHORABUENA!</p>
+           <p className="textP">¡ENHORABUENA!</p>
         </div>
         <p className="textMsj">
          Ya te has dado de alta y tienes una cuenta en RED EmancipaTIC
@@ -101,6 +101,7 @@ const siguiente = event => {
               className="Rectangle-1"
                name="second_name"
               type="text"
+              pattern="^([A-Za-z]{1,15})$"
               placeholder="Pon tus Apellidos"
               onChange={(e) => setDataToUname(e.target.value)}
             />
@@ -111,6 +112,8 @@ const siguiente = event => {
               className="Rectangle-1"
               name="phone"
               type="text"
+              pattern="^\d{9}$"
+              title="Ha de contener 9 números"
               placeholder="Pon tu numero"
               onChange={(e) => setDataToNumber(e.target.value)}
             />
@@ -126,13 +129,14 @@ const siguiente = event => {
       ) : (
 <>
 <div className="COMPLETE">
-            <label>Codigo postal</label>
+            <label>Código postal</label>
             <input
               className="Rectangle-1"
                name="cp"
               type="text"
               placeholder="Pon tu codigo postal"
-    
+              pattern="^(?:0[1-9]\d{3}|[1-4]\d{4}|5[0-2]\d{3})$"
+              title="El código postal ha de tener 5 números. No se admiten caracteres especiales ni letras."
               onChange={(e) => setDataToPostalCode(e.target.value)}
             />
           </div>
@@ -143,7 +147,8 @@ const siguiente = event => {
                name="pass"
               type="password"
               placeholder="Pon tu contraseña "
-    
+              pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}"
+              title="La contraseña ha de tener al menos una mayúscula, minúculas y un número. Mínimo 6 caracteres, máximo 16."
               onChange={(e) => setDataToPass(e.target.value)}
             />
           </div>
@@ -154,14 +159,15 @@ const siguiente = event => {
                name="pass2"
               type="password"
               placeholder="Repite tu contraseña"
-     
+              pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}"
+              title="La contraseña ha de tener al menos una mayúscula, minúculas y un número. Mínimo 6 caracteres, máximo 16."
               onChange={(e) => setDataToConPass(e.target.value)}
             />
           </div>
 
           <label className="labelCheckR">
           <input type="checkbox" className="check2" id="check1" />
-          <span className="spanR">He leido y acepto la Politica de privacidad</span>
+          <span className="spanR">He leído y acepto la Política de privacidad</span>
           </label >
           <div className="span-de-3">
           <span className="-de-3">2 de 2</span>
