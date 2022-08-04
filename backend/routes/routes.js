@@ -1,3 +1,15 @@
+/** 
+* @author Julian Osorio
+* @author Isaac Ortega
+* @author Gustavo Carretero
+*/
+
+/**
+ * Utilizamos router de express para el enturiamiento y conexion de el backend con el front, ademas
+ * de los diferentes controladores que utilizamos para dichas funciones y conexiones.
+ * enrutamos las diferentes funciones con los endpoints requeridos para su conexion y utilizacion
+ */
+
 const router = require("express").Router();
 const user = require("../controllers/user.controllers")
 const categ = require("../controllers/categorias.controllers")

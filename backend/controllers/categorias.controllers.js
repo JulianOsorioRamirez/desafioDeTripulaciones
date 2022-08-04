@@ -1,6 +1,26 @@
+
+/** 
+* @author Julian Osorio
+* @author Isaac Ortega
+* @author Gustavo Carretero
+*/
+    
+    
+    /**
+     * controlador de categorias en las vistas donde es requerido estos datos en el front
+     * Empezamos guardando en una constante el modelo que hemos creado para la busqueda en la BD
+     * y hacemos dos busquedas rapidas en la base de dados de esas categorias para enviarlas a el front y poder 
+     * pintarlas con react 
+    */
+    
+    
 const Categorias = require("../models/categModels");
 
-
+/**
+ * categorias
+ * @constructor
+ * @return {json}
+ */
 const categories = {
 
     getCategories : async (req, res) => {
@@ -13,6 +33,11 @@ const categories = {
 
 
     },
+    /**
+    * categorias2
+    * @constructor
+    * @return {json}
+    */
 
     postCategories2 : async (req, res) => {
 

@@ -1,3 +1,7 @@
+/**
+ * Modelo de moongose para la busqueda de datos o CRUD de las categorias
+ */
+
 const mongoose = require("mongoose");
 
 const objetoSchema={

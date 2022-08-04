@@ -1,6 +1,23 @@
+/** 
+* @author Julian Osorio
+* @author Isaac Ortega
+* @author Gustavo Carretero
+*/
+
+/**
+ * requerimos los modelos que utilizaremos para las diferentes busquedas en la BD de voluntarios
+ */
 const Voluntarios = require('../models/voluntariosModels')
 const Opiniones = require('../models/opinionesModels')
 
+/**
+ * Voluntarios
+ * @contructor
+ * @return {json}
+ * Hacemos una busqueda en la BD y hacemos un filtro de los diferentes voluntarios segun las categorias a las 
+ * que estan asociados y recogemos solo los 5 primeros para su posterior envio a el front y asi utilizarlo 
+ * en las vistas
+ */
 const voluntarios = {
     buscar : async (req, res) => {
         var volun = []
