@@ -90,6 +90,14 @@ res.json({usuario: UsuarioRegistrado})
 
     }
 
+  },
+  prueba:async (req,res) => {
+    const telf="1231233123"
+    var login = await Usuarios.findOne({ Movil: telf })
+    if(login){
+return true
+    }else{ return false}
+
   }
 }
 
