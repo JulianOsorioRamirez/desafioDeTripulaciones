@@ -1,4 +1,7 @@
 const mongoose = require("mongoose");
+/**
+ * Modelo de moongose para la busqueda de datos o CRUD de los datos de usuarios
+ */
 
 const objetoSchema={
     Nombre: String,
